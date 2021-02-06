@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="/portafolio/TutorialBootstrap/style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="row titulo">
+      <div class="col-12">
+        <h1><a href="/portafolio/TutorialBootstrap/index.html"><i class="fab fa-bootstrap"></i> Bootstrap</a></h1>
+      </div>
+    </div>
+
+    <div class="row pasos shadow">
+      <div class="col-12">
+
+        <h5>Columnas en partes iguales <code>class="col"</code></h5>
+        <div class="row">
+          <div class="col fondo-tomate">Columna 1</div>
+          <div class="col fondo-oscuro">Columna 2</div>
+          <div class="col fondo-tomate">Columna 3</div>
+          <div class="col fondo-oscuro">Columna 4</div>
+        </div>
+
+        <h5 class="mt-3">Columnas con pesos distinto <code>class="col-#"</code></h5>
+        <div class="row">
+          <div class="col-3 fondo-oscuro">Columna 1</div>
+          <div class="col-6 fondo-tomate">
+            <div class="row">
+              <div class="col-3 fondo-tomate">Columna 1</div>
+              <div class="col-6 fondo-oscuro">Columna 2</div>
+              <div class="col-3 fondo-tomate">Columna 3</div>
+            </div>
+          </div>
+          <div class="col-3 fondo-oscuro">Columna 3</div>
+        </div>
+
+        <h5 class="mt-3">Columna de peso 9 centrado y extremos con pesos iguales <code>class="col-#"</code></h5>
+        <div class="row fondo-tomate">
+          <div class="col-2"></div>
+          <div class="col-8 fondo-oscuro">
+            texto de la columna de peso 9
+          </div>
+          <div class="col-2"></div>
+        </div>
+
+        <h5 class="mt-3">Las columnas colapsan cuando la pantalla es menor 1200px <code>class="col-xl-#"</code></h5>
+        <div class="row">
+         <div class="col-xl-4 fondo-tomate">
+          Contenido Columna 1
+         </div>
+         <div class="col-xl-4 fondo-oscuro">
+          Contenido Columna 2
+         </div>
+         <div class="col-xl-4 fondo-tomate">
+          Contenido Columna 3
+         </div>
+        </div>
+
+        <h5 class="mt-3">Las columnas colapsan cuando la pantalla es menor 992px <code>class="col-lg-#"</code></h5>
+        <div class="row">
+         <div class="col-lg-4 fondo-tomate">
+          Contenido Columna 1
+         </div>
+         <div class="col-lg-4 fondo-oscuro">
+          Contenido Columna 2
+         </div>
+         <div class="col-lg-4 fondo-tomate">
+          Contenido Columna 3
+         </div>
+        </div>
+
+        <h5 class="mt-3">Las columnas colapsan cuando la pantalla es menor 768px <code>class="col-md-#"</code></h5>
+        <div class="row">
+         <div class="col-md-4 fondo-tomate">
+          Contenido Columna 1
+         </div>
+         <div class="col-md-4 fondo-oscuro">
+          Contenido Columna 2
+         </div>
+         <div class="col-md-4 fondo-tomate">
+          Contenido Columna 3
+         </div>
+        </div>
+
+        <h5 class="mt-3">Las columnas colapsan cuando la pantalla es menor 576px <code>class="col-sm-#"</code></h5>
+        <div class="row">
+         <div class="col-sm-4 fondo-tomate">
+          Contenido Columna 1
+         </div>
+         <div class="col-sm-4 fondo-oscuro">
+          Contenido Columna 2
+         </div>
+         <div class="col-sm-4 fondo-tomate">
+          Contenido Columna 3
+         </div>
+        </div>
+
+        <h4 class="mt-3">Alineacion Vertical - Alinear elemento en la parte superior en el eje Y <code>class="align-items-start"</code></h4>
+        <div class="row h-300 align-items-start fondo-claro">
+          <div class="col-md-4 h-cien fondo-oscuro">columna 1</div>
+          <div class="col-md-4 h-cien fondo-tomate">columna 2</div>
+          <div class="col-md-4 h-cien fondo-oscuro">columna 3</div>
+        </div>
+    
+        <h4 class="mt-3">Alineacion Vertical - Alinear elemento en la parte central en el eje Y <code>class="align-items-center"</code></h4>
+        <div class="row h-300 align-items-center fondo-claro">
+          <div class="col-md-4 h-cien fondo-oscuro">columna 1</div>
+          <div class="col-md-4 h-cien fondo-tomate">columna 2</div>
+          <div class="col-md-4 h-cien fondo-oscuro">columna 3</div>
+        </div>
+    
+        <h4 class="mt-3">Alineacion Vertical - Alinear elemento en la parte inferior en el eje Y <code>class="align-items-end"</code></h4>
+        <div class="row h-300 align-items-end fondo-claro">
+          <div class="col-md-4 h-cien fondo-oscuro">columna 1</div>
+          <div class="col-md-4 h-cien fondo-tomate">columna 2</div>
+          <div class="col-md-4 h-cien fondo-oscuro">columna 3</div>
+        </div>
+    
+        <h4 class="mt-3">Alineacion Vertical Individual - Alinear elementos el eje Y <code>class="align-self-[start,center,end]"</code></h4>
+        <div class="row h-300  fondo-claro">
+          <div class="col-md-4 h-cien fondo-oscuro align-self-start">columna 1</div>
+          <div class="col-md-4 h-cien fondo-tomate align-self-center">columna 2</div>
+          <div class="col-md-4 h-cien fondo-oscuro align-self-end">columna 3</div>
+        </div>
+
+        <h4 class="mt-3">Alineacion Horizontal - alinear los elementos al lado izquierdo en el eje X <code>class="justify-content-start"</code></h4>
+        <div class="row fondo-claro justify-content-start">
+          <div class="col-md-2 h-cien fondo-oscuro">Columna 1</div>
+          <div class="col-md-2 h-cien fondo-tomate">Columna 2</div>
+          <div class="col-md-2 h-cien fondo-oscuro">Columna 3</div>
+        </div>
+    
+        <h4 class="mt-3">Alineacion Horizontal - alinear los elementos al centro en el eje X <code>class="justify-content-center"</code></h4>
+        <div class="row fondo-claro justify-content-center">
+          <div class="col-md-2 h-cien fondo-oscuro">Columna 1</div>
+          <div class="col-md-2 h-cien fondo-tomate">Columna 2</div>
+          <div class="col-md-2 h-cien fondo-oscuro">Columna 3</div>
+        </div>
+    
+        <h4 class="mt-3">Alineacion Horizontal - alinear los elementos al final en el eje X <code>class="justify-content-end"</code></h4>
+        <div class="row fondo-claro justify-content-end">
+          <div class="col-md-2 h-cien fondo-oscuro">Columna 1</div>
+          <div class="col-md-2 h-cien fondo-tomate">Columna 2</div>
+          <div class="col-md-2 h-cien fondo-oscuro">Columna 3</div>
+        </div>
+    
+        <h4 class="mt-3">Alineacion Horizontal - alinear los elementos (space-around) en el eje X <code>class="justify-content-around"</code></h4>
+        <div class="row fondo-claro justify-content-around">
+         <div class="col-md-2 h-cien fondo-oscuro">Columna 1</div>
+         <div class="col-md-2 h-cien fondo-tomate">Columna 2</div>
+         <div class="col-md-2 h-cien fondo-oscuro">Columna 3</div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
